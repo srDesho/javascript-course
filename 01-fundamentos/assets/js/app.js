@@ -14,6 +14,10 @@ var b = 10; // el var ya no se debe usar para crear variables aunque aún es vá
 
 const c = 10 // cons es para definir CONSTANTES.
 
+// alert("Hola desde app.js");
+
+// console.log( miNuevoNombre + ' Montaño');
+
 // JavaScript tiene el nombre Java al comienzo por lo innovador y popular que era Java en ese timpo así que lo implementaron como marketing.
 //Orígenes de JavaScript:
 
@@ -52,29 +56,49 @@ let d = 10,
 // en mayúsculas las variables que son globales, en este caso será sólo para este archivo de ejemplo entonces lo ponemos en minúscula.
 const saludo = f + g;
 
-console.log( x );
+/* console.log( x ); */
 
 // Trabajando más con la Terminal
 // Mensajes de consola.
-console.log(x);
+/* console.log(x);
 console.warn(x);
 console.error(x);
-console.info(x);
+console.info(x); */
 
 // Mostrando los nombres de nuestras variables:
-console.log('d', d);
+/* console.log('d', d);
 console.log('e', e);
 console.log('f', f);
-console.log('x', x);
+console.log('x', x); */
 
 // Poniendo colores y estilos a nuestros mensajes en consola  con css
-console.log('%c Mis variables', 'color:blue; font-weight: bold')
+// console.log('%c Mis variables', 'color:blue; font-weight: bold')
 
 // Otra forma de mostrar los nombres de las variables es enmarcando con llaves {}
-console.log({ d });
+/* console.log({ d });
 console.log({ e });
 console.log({ f });
-console.log({ x });
+console.log({ x }); */
+
+f = 'Hello again';
 
 // Cuando necesitamos imprimir muchas variables podemos hacer uso de un table.
-console.table({d,e,f,g}); // Las llaves nos dicen que es un objeto y los corchetes [] son para arreglos
+// console.table({d,e,c,f,g}); // Las llaves nos dicen que es un objeto y los corchetes [] son para arreglos
+
+// Porqué no usar var?
+/* 
+**`var`:**
+
+* **Ámbito de función:** Visible en toda la función donde se declara.
+* **Hoisting:** Declaración elevada, puede causar errores.
+* **Re-declaración:** Permitida, puede generar confusiones.
+* **No recomendado:** Comportamiento impredecible, ámbito global.
+
+**`let`:**
+
+* **Ámbito de bloque:** Visible solo en el bloque donde se declara.
+* **Hoisting:** Elevada, pero no inicializada (evita errores).
+* **Re-declaración:** No permitida, evita confusiones.
+* **Recomendado:** Más seguro, ámbito claro.
+ */
+let miNuevoNombre = "Cristian ";
