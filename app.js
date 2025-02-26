@@ -44,7 +44,37 @@ const c = 10 // cons es para definir CONSTANTES.
 
 let d = 10, 
     e = 10,
-    f = 10,
+    f = 'Hello ',
+    g = 'friend',
     x = d + e;
 
+// En la mayoría de los lenguajes las constantes siempre escritas en mayúsculas, en js puede ser distinto, mayormente se ponen 
+// en mayúsculas las variables que son globales, en este caso será sólo para este archivo de ejemplo entonces lo ponemos en minúscula.
+const saludo = f + g;
+
 console.log( x );
+
+// Trabajando más con la Terminal
+// Mensajes de consola.
+console.log(x);
+console.warn(x);
+console.error(x);
+console.info(x);
+
+// Mostrando los nombres de nuestras variables:
+console.log('d', d);
+console.log('e', e);
+console.log('f', f);
+console.log('x', x);
+
+// Poniendo colores y estilos a nuestros mensajes en consola  con css
+console.log('%c Mis variables', 'color:blue; font-weight: bold')
+
+// Otra forma de mostrar los nombres de las variables es enmarcando con llaves {}
+console.log({ d });
+console.log({ e });
+console.log({ f });
+console.log({ x });
+
+// Cuando necesitamos imprimir muchas variables podemos hacer uso de un table.
+console.table({d,e,f,g}); // Las llaves nos dicen que es un objeto y los corchetes [] son para arreglos
