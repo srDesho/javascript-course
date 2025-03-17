@@ -20,7 +20,7 @@ console.log({juan, ana});
 
 // Vemos lo que pasa al trabajar con funciones y objetos como parámetros por referencia.
 // En este caso sabemos que cuando agregamos los tres puntos al argumento este sería un parámetro rest.
-// para romper la referencia debemos hacerlo de la misma manera que hicimos már arriba, envolvemos con llaves.
+// para romper la referencia debemos hacerlo de la misma manera que hicimos más arriba, envolvemos con llaves.
 const cambiarNombre = ({...persona}) => {
     persona.nombre = 'Tony';
     return persona;
